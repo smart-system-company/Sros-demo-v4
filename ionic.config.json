@@ -1,0 +1,7 @@
+{
+  "name": "sros_demo_v3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
