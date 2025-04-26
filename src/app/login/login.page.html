@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true" class="login-page">
+  <div class="container">
+    <h2>Welcome back!</h2>
+    <h1>Login to Meal and Meat</h1>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked">Email:</ion-label>
+      <ion-input type="email" placeholder="Enter your email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked">Password:</ion-label>
+      <ion-input type="password" placeholder="Enter your password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="login-button" [disabled]="!email || !password" (click)="login()">
+      Login
+    </ion-button>
+
+    <ion-button expand="block" fill="clear" class="signup-link" (click)="goToRegister()">
+      Don't have an account? Sign Up
+    </ion-button>
+  </div>
+</ion-content>

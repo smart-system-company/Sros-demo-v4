@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true" class="sign-up-page">
+  <div class="container">
+    <h2>Welcome to</h2>
+    <h1>Meal and Meat</h1>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked">First Name:</ion-label>
+      <ion-input placeholder="Enter First name" [(ngModel)]="firstName"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked">Last Name:</ion-label>
+      <ion-input placeholder="Enter Last name" [(ngModel)]="lastName"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="input-item">
+      <ion-label position="stacked">Phone Number:</ion-label>
+      <ion-input type="tel" placeholder="Enter phone number" [(ngModel)]="phoneNumber"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="next-button" [disabled]="!firstName || !lastName || !phoneNumber" (click)="goNext()">
+      Next
+    </ion-button>
+
+    <ion-button expand="block" fill="clear" class="login-link" (click)="goLogin()">
+      Already have an account? Login
+    </ion-button>
+  </div>
+</ion-content>

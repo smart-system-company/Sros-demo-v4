@@ -1,0 +1,47 @@
+.sign-up-page {
+    --background: linear-gradient(to bottom, #d2a679, #8b5e3c);
+  
+    .container {
+      padding: 20px;
+      margin-top: 60px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 30px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 5px;
+    }
+  
+    .input-item {
+      margin-bottom: 20px;
+      --background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 5px 10px;
+    }
+  
+    ion-input {
+      color: white;
+    }
+  
+    .next-button {
+      background-color: #4d2600;
+      border-radius: 25px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  
+    .login-link {
+      margin-top: 10px;
+      color: white;
+      text-decoration: underline;
+      font-size: 15px;
+    }
+  }
